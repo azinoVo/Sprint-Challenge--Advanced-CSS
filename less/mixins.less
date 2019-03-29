@@ -1,1 +1,33 @@
-// Mixins Here
+// General Mixins Here
+
+.flexin-center {
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+    align-items:center;
+    margin:0 auto;
+}
+
+.container-style {
+    font-family: 'Russo One', sans-serif;
+    color: #23293B;
+}
+
+//Causing Issues with Less
+// .width-margin {
+//     width:100%;
+//     margin-left:2.5%;
+// }
+
+//Parametric Mixin Below
+
+.button-style (@fontCol:red, @bgCol:blue, @borRad:1rem) {
+    color:@fontCol;
+    background-color:@bgCol;
+    border-radius:@borRad;
+    font-size:1.5rem;
+    padding:0.85rem;
+    margin-left:0.5rem;
+    width:25%;
+    text-align:center;
+}
